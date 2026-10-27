@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Form</title>
+</head>
+<body>
+
+    <!-- Box/Border banane ke liye ek simple div tag -->
+    <div style="border: 2px solid black; width: 500px; margin: 0 auto; padding: 20px;">
+        
+        <h2 align="center">Hotel Room Booking Form</h2>
+        
+        <!-- Form Start -->
+        <form action="#">
+            
+            <!-- Table ka use fields ko neatly align karne ke liye -->
+            <table align="center" cellpadding="5">
+                
+                <!-- Text Input -->
+                <tr>
+                    <td align="right"><label for="fullname">Full Name:</label></td>
+                    <td align="left"><input type="text" id="fullname" name="fullname"></td>
+                </tr>
+                
+                <!-- Email Input -->
+                <tr>
+                    <td align="right"><label for="email">Email:</label></td>
+                    <td align="left"><input type="email" id="email" name="email"></td>
+                </tr>
+                
+                <!-- Phone (Tel) Input -->
+                <tr>
+                    <td align="right"><label for="phone">Phone:</label></td>
+                    <td align="left"><input type="tel" id="phone" name="phone"></td>
+                </tr>
+                
+                <!-- Check-in Date -->
+                <tr>
+                    <td align="right"><label for="checkin">Check-in Date:</label></td>
+                    <td align="left"><input type="date" id="checkin" name="checkin"></td>
+                </tr>
+                
+                <!-- Check-out Date -->
+                <tr>
+                    <td align="right"><label for="checkout">Check-out Date:</label></td>
+                    <td align="left"><input type="date" id="checkout" name="checkout"></td>
+                </tr>
+                
+                <!-- Dropdown Menu (Select) -->
+                <tr>
+                    <td align="right"><label for="room">Room Type:</label></td>
+                    <td align="left">
+                        <select id="room" name="room">
+                            <option value="single">Single Room</option>
+                            <option value="double">Double Room</option>
+                            <option value="suite">Suite</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <!-- Number Input -->
+                <tr>
+                    <td align="right"><label for="guests">Number of Guests:</label></td>
+                    <td align="left"><input type="number" id="guests" name="guests" min="1" max="10"></td>
+                </tr>
+                
+                <!-- Textarea for Special Requests -->
+                <tr>
+                    <td align="center" colspan="2"><label for="requests">Special Requests:</label></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <textarea id="requests" name="requests" rows="4" cols="40"></textarea>
+                    </td>
+                </tr>
+                
+                <!-- Buttons -->
+                <tr>
+                    <td align="center" colspan="2">
+                        <button type="submit">Book Now</button>
+                        <button type="reset">Reset Form</button>
+                    </td>
+                </tr>
+                
+            </table>
+            
+        </form>
+
+    </div>
+
+</body>
+</html>
